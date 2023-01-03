@@ -1,5 +1,5 @@
 import { IAuthorizationOptions, TypePrompt } from "./authorization";
-import { isLoggedIn, logOutOAuthUser, createOAuthHeaders, getAccessToken, exchangeToken } from "./apiUtils";
+import { isLoggedIn, logOutOAuthUser, createOAuthHeaders, getAccessToken, exchangeToken, IServerResponseState, removeOAuthQueryParams, serverResponse, storeAccessToken } from "./apiUtils";
 import {  GoogleButton, IGoogleButton, GoogleAuth, GoogleAuthConsumer, IOAuthState,  setPrompt} from "./components";
 
 export {
@@ -16,4 +16,8 @@ export {
     TypePrompt,
     setPrompt,
     exchangeToken,
+    IServerResponseState, 
+    removeOAuthQueryParams, 
+    serverResponse, 
+    storeAccessToken
 }
