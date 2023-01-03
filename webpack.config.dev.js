@@ -23,6 +23,14 @@ module.exports =  {
                 options: {
                     name: '[path][name].[ext]',
                 },
+            },
+            {
+                test: /\.jsx?$/,
+                loader: 'babel-loader',
+                exclude: /node_modules/,
+                query: {
+                    presets: ['es2015']
+                 }
             }
         ],
     },
