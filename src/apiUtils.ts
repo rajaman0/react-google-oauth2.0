@@ -136,7 +136,6 @@ export function createOAuthHeaders(resource?: string): { [k: string]: string } {
     }
 }
 
-/** @internal */
 export function removeOAuthQueryParams(): void {
     const currentLocation = document.location.href;
     if(document.location.search) {
