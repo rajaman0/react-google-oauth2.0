@@ -85,7 +85,6 @@ export declare function getAccessToken(): string | null;
 export declare function createOAuthHeaders(resource?: string): {
     [k: string]: string;
 };
-/** @internal */
 export declare function removeOAuthQueryParams(): void;
 /**
  * @description
